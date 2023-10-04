@@ -51,5 +51,21 @@ public class CatalogoLivros {
         }
         return livroPorTitulo;
     }
+
+    public static void main(String[] args) {
+        CatalogoLivros catalogoLivros = new CatalogoLivros(null);
+
+        catalogoLivros.adicionarLivro("A divina comedia", "Dante Alighieri", 1472);
+        catalogoLivros.adicionarLivro("Dom Quixote", "Miguel de Cervantes", 1605);
+        catalogoLivros.adicionarLivro("Hamlet", "William Shakespeare", 1599);
+        catalogoLivros.adicionarLivro("Moby-Dick", "Herman Melville", 1851);
+        catalogoLivros.adicionarLivro("Billy Budd", "Herman Melville", 1924);
+
+        System.out.println(catalogoLivros.pesquisarPorAutor("Herman Melville"));
+        System.out.println(catalogoLivros.pesquisarPorIntervaloAnos(1600, 1950));
+        System.out.println(catalogoLivros.pesquisarPorTitulo("a divina comedia"));
+
+
+    }
     
 }
