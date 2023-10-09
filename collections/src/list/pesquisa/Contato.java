@@ -1,4 +1,4 @@
-package list.Pesquisa;
+package list.pesquisa;
 
 public class Contato {
     private String nome;
