@@ -1,4 +1,4 @@
-package list.set.OperacoesBasicas;
+package set.OperacoesBasicas;
 
 public class Convidado {
     private String nome;
